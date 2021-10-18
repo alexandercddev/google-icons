@@ -1,0 +1,287 @@
+/**
+ * @author: alexandercd
+ * @date: 17/octubre/2021
+ * @description: 
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  /*border: 1px solid;*/
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.g-assistant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.g-assistant > div.circules-blue-red {
+  width: 100px;
+  height: 100px;
+  /** Blue **/
+  /** Red **/
+}
+.g-assistant > div.circules-blue-red::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #4387f4;
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.g-assistant > div.circules-blue-red::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: #ea4334;
+  border-radius: 100%;
+  margin-left: 55px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.g-assistant > div.circules-yellow-green {
+  position: absolute;
+  /** Yellow **/
+  /** Green **/
+}
+.g-assistant > div.circules-yellow-green::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #fbbd04;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-left: 3px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.g-assistant > div.circules-yellow-green::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #34a853;
+  border-radius: 100%;
+  margin-top: -30px;
+  margin-left: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.g-ads {
+  width: 100px;
+  height: 100px;
+}
+.g-ads::before {
+  content: "";
+  width: 30px;
+  height: 100px;
+  position: absolute;
+  background-color: #fbbd04;
+  border-radius: 50px;
+  transform: rotate(35deg);
+  margin-left: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.g-ads::after {
+  content: "";
+  width: 30px;
+  height: 100px;
+  position: absolute;
+  background-color: #4387f4;
+  border-radius: 50px;
+  transform: rotate(-35deg);
+  margin-left: 55px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.g-ads > div.g-ads-c {
+  width: 30px;
+  height: 30px;
+  background-color: #34a853;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 100;
+  margin-top: 65px;
+  margin-left: -5px;
+}
+
+.g-keep {
+  width: 75px;
+  height: 100px;
+  background-color: #fbbd04;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.g-keep::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: #f09800;
+  margin-left: 50px;
+  margin-top: -75px;
+}
+.g-keep::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 25px 25px 0;
+  border-color: transparent white transparent transparent;
+  margin-left: 50px;
+  margin-top: -75px;
+}
+.g-keep > div.g-keep-icon {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+}
+.g-keep > div.g-keep-icon::before {
+  content: "";
+  width: 35px;
+  height: 10px;
+  background-color: #fbbd04;
+  position: absolute;
+  margin-top: 30px;
+}
+.g-keep > div.g-keep-icon::after {
+  content: "";
+  width: 25px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+
+.g-document {
+  width: 75px;
+  height: 100px;
+  background-color: #4387f4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.g-document::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: #1966d2;
+  margin-left: 50px;
+  margin-top: -75px;
+}
+.g-document::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 25px 25px 0;
+  border-color: transparent white transparent transparent;
+  margin-left: 50px;
+  margin-top: -75px;
+}
+.g-document > div.g-document-icon {
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  box-shadow: 0px -12px 0px white;
+}
+.g-document > div.g-document-icon::before {
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  margin-top: 12px;
+}
+
+.g-classroom {
+  width: 125px;
+  height: 100px;
+  background-color: #f09800;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.g-classroom::before {
+  content: "";
+  width: 105px;
+  height: 80px;
+  position: absolute;
+  background-color: #18a05e;
+}
+.g-classroom::after {
+  content: "";
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  margin-top: 79px;
+  margin-left: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.g-classroom > div.g-classroom-icon {
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+.g-classroom > div.g-classroom-icon::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 25px 5px 0px rgba(255, 255, 255, 0.3), -25px 5px 0px rgba(255, 255, 255, 0.3);
+}
+.g-classroom > div.g-classroom-icon::after {
+  content: "";
+  width: 40px;
+  height: 16px;
+  position: absolute;
+  background-color: white;
+  border-radius: 100% 100% 1% 1%;
+  margin-top: 24px;
+  box-shadow: 25px 0px 0px rgba(255, 255, 255, 0.3), -25px 0px 0px rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
